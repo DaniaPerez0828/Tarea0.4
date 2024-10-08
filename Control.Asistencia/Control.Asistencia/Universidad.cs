@@ -12,5 +12,12 @@ namespace Control.Asistencia
         {
             estudiantes = new List<Estudiante>();
         }
+
+        public void RegistrarEstudiante(string nombre, int sesionesTotales, int sesionesAsistidas)
+        {
+            Estudiante nuevoEstudiante = new Estudiante(nombre, sesionesTotales);
+            nuevoEstudiante.RegistrarAsistencia(sesionesAsistidas);
+            estudiantes.Add(nuevoEstudiante);
+        }
     }
 }
