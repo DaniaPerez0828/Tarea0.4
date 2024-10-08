@@ -8,5 +8,6 @@ namespace Control.Asistencia
 {
     public static class Asistencia
     {
+        private const double MINIMO_ASISTENCIA = 75;
     }
 }
