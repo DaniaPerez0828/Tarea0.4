@@ -25,6 +25,16 @@ namespace Control.Asistencia
                 SesionesAsistidas = SesionesTotales;
             }
         }
+        public string ObtenerInfo()
+        {
+            double porcentaje = Asistencia.CalcularPorcentaje(SesionesAsistidas, SesionesTotales)
+            string estado = Asistencia.CumpleMinimo(SesionesAsistidas, SesionesTotales)
+                return $"| Estudiante         | {Nombre}                          |\n" +
+                   $"|--------------------|---------------------------------------------|\n" +
+                   $"| Asistencias        | {SesionesAsistidas}/{SesionesTotales} |\n" +
+                   $"| Porcentaje         | {porcentaje:F2}%                            |\n" +
+                   $"| Estado             | {estado}                                    |";
+        }
     }
    
 }
