@@ -8,6 +8,8 @@ namespace Control.Asistencia
 {
     public class Universidad
     {
+        private List<Estudiante> estudiantes;
+
         public Universidad()
         {
             estudiantes = new List<Estudiante>();
@@ -20,11 +22,11 @@ namespace Control.Asistencia
             estudiantes.Add(nuevoEstudiante);
         }
 
-        public void Mostrar()
+        public void MostrarResumen()
         {
             foreach (var estudiante in estudiantes)
             {
-                Console.WriteLine(ResumenEstudiante.ObtenerInformacionEstudiante(estudiante));
+                Console.WriteLine(ResumenEstudiante.ObtenerInfo(estudiante));
             }
         }
     }
