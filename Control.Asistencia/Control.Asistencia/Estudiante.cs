@@ -12,4 +12,11 @@ namespace Control.Asistencia
         public int SesionesTotales { get; private set; }
         public int SesionesAsistidas { get; private set; }
     }
+
+    public Estudiante(string nombre, int sesionesTotales)
+    {
+        nombre = nombre;
+        sesionesTotales = sesionesTotales;
+        SesionesAsistidas = 0;
+    }
 }
