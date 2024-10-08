@@ -19,5 +19,13 @@ namespace Control.Asistencia
             nuevoEstudiante.RegistrarAsistencia(sesionesAsistidas);
             estudiantes.Add(nuevoEstudiante);
         }
+
+        public void Mostrar()
+        {
+            foreach (var estudiante in estudiantes)
+            {
+                Console.WriteLine(ResumenEstudiante.ObtenerInformacionEstudiante(estudiante));
+            }
+        }
     }
 }
