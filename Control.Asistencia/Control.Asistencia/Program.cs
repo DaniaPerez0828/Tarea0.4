@@ -39,6 +39,10 @@ namespace Control.Asistencia
                 }
 
                 universidad.RegistrarEstudiante(nombre, sesionesTotales, sesionesAsistidas);
+
+                Console.WriteLine("\nResumen de estudiantes:");
+                universidad.MostrarResumen();
+
             }
 
         }
