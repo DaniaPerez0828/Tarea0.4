@@ -8,5 +8,9 @@ namespace Control.Asistencia
 {
     public class Universidad
     {
+        public Universidad()
+        {
+            estudiantes = new List<Estudiante>();
+        }
     }
 }
