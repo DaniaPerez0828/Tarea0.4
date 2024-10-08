@@ -27,9 +27,9 @@ namespace Control.Asistencia
         }
         public string ObtenerInfo()
         {
-            double porcentaje = Asistencia.CalcularPorcentaje(SesionesAsistidas, SesionesTotales)
-            string estado = Asistencia.CumpleMinimo(SesionesAsistidas, SesionesTotales)
-                return $"| Estudiante         | {Nombre}                          |\n" +
+            double porcentaje = Asistencia.CalcularPorcentaje(SesionesAsistidas, SesionesTotales);
+            string estado = Asistencia.CumpleMinimo(SesionesAsistidas, SesionesTotales) ? "Aprobado" : "Reprobado";
+                return  $"| Estudiante         | {Nombre}                          |\n" +
                    $"|--------------------|---------------------------------------------|\n" +
                    $"| Asistencias        | {SesionesAsistidas}/{SesionesTotales} |\n" +
                    $"| Porcentaje         | {porcentaje:F2}%                            |\n" +
