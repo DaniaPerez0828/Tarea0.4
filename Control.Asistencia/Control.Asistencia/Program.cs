@@ -10,6 +10,7 @@ namespace Control.Asistencia
     {
         static void Main(string[] args)
         {
+            Universidad universidad = new Universidad();
         }
     }
 }
